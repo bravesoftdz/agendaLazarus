@@ -1,0 +1,202 @@
+object frmAgenda: TfrmAgenda
+  Left = 334
+  Height = 240
+  Top = 146
+  Width = 357
+  Caption = 'Agenda de Contactos'
+  ClientHeight = 240
+  ClientWidth = 357
+  OnCreate = FormCreate
+  LCLVersion = '1.6.0.4'
+  object Label1: TLabel
+    Left = 30
+    Height = 15
+    Top = 32
+    Width = 44
+    Caption = 'Nombre'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 30
+    Height = 15
+    Top = 61
+    Width = 50
+    Caption = 'Dirección'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 28
+    Height = 15
+    Top = 91
+    Width = 46
+    Caption = 'Teléfono'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 29
+    Height = 15
+    Top = 124
+    Width = 36
+    Caption = 'Correo'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 99
+    Height = 15
+    Top = 216
+    Width = 155
+    Caption = 'Victor Hugo Medna Sandoval'
+    ParentColor = False
+  end
+  object txtNombre: TEdit
+    Left = 99
+    Height = 23
+    Top = 24
+    Width = 165
+    ReadOnly = True
+    TabOrder = 0
+    Text = 'txtNombre'
+  end
+  object txtDireccion: TEdit
+    Left = 99
+    Height = 23
+    Top = 61
+    Width = 165
+    OnChange = txtDireccionChange
+    ReadOnly = True
+    TabOrder = 1
+    Text = 'txtDireccion'
+  end
+  object txtTelefono: TEdit
+    Left = 99
+    Height = 23
+    Top = 94
+    Width = 165
+    ReadOnly = True
+    TabOrder = 2
+    Text = 'txtTelefono'
+  end
+  object txtCorreo: TEdit
+    Left = 99
+    Height = 23
+    Top = 124
+    Width = 165
+    ReadOnly = True
+    TabOrder = 3
+    Text = 'txtCorreo'
+  end
+  object btnPrimero: TButton
+    Left = 16
+    Height = 25
+    Top = 176
+    Width = 75
+    Caption = '<<'
+    OnClick = btnPrimeroClick
+    TabOrder = 4
+  end
+  object btnAnterior: TButton
+    Left = 96
+    Height = 25
+    Top = 176
+    Width = 75
+    Caption = '<'
+    OnClick = btnAnteriorClick
+    TabOrder = 5
+  end
+  object btnSiguiente: TButton
+    Left = 176
+    Height = 25
+    Top = 176
+    Width = 75
+    Caption = '>'
+    OnClick = btnSiguienteClick
+    TabOrder = 6
+  end
+  object btnUltimo: TButton
+    Left = 256
+    Height = 25
+    Top = 177
+    Width = 75
+    Caption = '>>'
+    OnClick = btnUltimoClick
+    TabOrder = 7
+  end
+  object btnNuevo: TButton
+    Left = 282
+    Height = 25
+    Top = 8
+    Width = 73
+    Caption = 'Nuevo'
+    OnClick = btnNuevoClick
+    TabOrder = 8
+  end
+  object btnGuardar: TButton
+    Left = 282
+    Height = 25
+    Top = 43
+    Width = 75
+    Caption = 'Guardar'
+    Enabled = False
+    OnClick = btnGuardarClick
+    TabOrder = 9
+  end
+  object Label6: TLabel
+    Left = 30
+    Height = 15
+    Top = 5
+    Width = 59
+    Caption = 'Contacto #'
+    ParentColor = False
+  end
+  object lblNumero: TLabel
+    Left = 99
+    Height = 20
+    Top = 0
+    Width = 65
+    Caption = 'lblNumero'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial Narrow'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object btnCancelar: TButton
+    Left = 282
+    Height = 25
+    Top = 79
+    Width = 75
+    Caption = 'Cancelar'
+    Enabled = False
+    OnClick = btnCancelarClick
+    TabOrder = 10
+  end
+  object btnEditar: TButton
+    Left = 282
+    Height = 25
+    Top = 112
+    Width = 73
+    Caption = 'Editar'
+    OnClick = btnEditarClick
+    TabOrder = 11
+  end
+  object btnEliminar: TButton
+    Left = 282
+    Height = 24
+    Top = 144
+    Width = 70
+    Caption = 'Eliminar'
+    OnClick = btnEliminarClick
+    TabOrder = 12
+  end
+  object Label7: TLabel
+    Left = 8
+    Height = 15
+    Top = 216
+    Width = 21
+    Caption = 'MTI'
+    ParentColor = False
+  end
+end
